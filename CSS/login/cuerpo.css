@@ -1,0 +1,48 @@
+.cuerpo {
+    width: 100%;
+    height: 66.6vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-around;
+
+    background-color: #ccc;
+
+}
+
+.cuerpo__titulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.cuerpo__form {
+    
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.form__area {
+    width: 33%;
+    height: 40px;
+    margin: 5px auto;
+
+    border: none;
+    outline: none;
+
+    text-overflow: ellipsis;
+}
+
+.form__area:last-child {
+    height: 43px;
+    width: 33.4%;
+
+    background-color: var(--blue__button___color);
+    color: white;
+    font-weight: bold;
+}

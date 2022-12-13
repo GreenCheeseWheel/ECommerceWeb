@@ -1,0 +1,3 @@
+Small devices: 768px and down
+Medium devices: 992 and down
+Large devices: 992 and up

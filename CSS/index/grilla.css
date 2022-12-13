@@ -1,0 +1,131 @@
+/*################*/
+/* LARGE DEVICES */
+/*################*/
+
+
+a {
+    text-decoration: none;
+}
+
+
+.grilla {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: "star wars"
+                         "productos"
+                         "varios";
+
+}
+
+.carta {
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.carta__cabecera {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 2rem 0 0.8rem 0;
+
+}
+
+.carta__titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--titles__color);
+
+}
+
+.link__productos {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--blue__button___color);
+}
+
+.link__productos::after {
+    content: "→";
+    margin-left: 7px;
+}
+
+.carta__contenido {
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    
+}
+
+.carta__item {
+    width: calc(1/7 * 100%);
+    text-align: left;
+}
+
+
+
+.carta__item * {
+    margin: 0.5em 0;
+}
+
+.carta__item p:nth-child(3) {
+    font-weight: bold;
+}
+
+.carta__item img{
+    width: 100%;
+}
+
+.carta__vinculo {
+    color: var(--blue__button___color);
+    font-weight: bold;
+}
+
+
+
+/*################*/
+/* MEDIUM DEVICES */
+/*################*/
+
+
+@media screen and (max-width: 992px){
+
+    .carta__item {
+        width: calc(1/5 * 100%);
+        text-align: left;
+    }
+
+    .carta__item:last-child{
+        display: none;
+    }
+
+    .carta__item:nth-last-child(2){
+        display: none;
+    }
+
+   
+}
+
+
+
+/*###############*/
+/* SMALL DEVICES */
+/*###############*/
+
+@media screen and (max-width: 768px) {
+    .carta__contenido {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carta__item {
+        width: calc(45%);
+        text-align: left;
+    }
+
+}

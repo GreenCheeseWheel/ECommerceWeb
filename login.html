@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Home - login</title>
+
+        <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/login/cabecera.css">
+        <link rel="stylesheet" href="CSS/login/cuerpo.css">
+        <link rel="stylesheet" href="CSS/login/rodapie.css">
+
+    </head>
+
+    <body>
+        <header class="cabecera">
+            
+            <div class="cabecera__barra">
+
+                <section class="cabecera__busqueda">
+                    <figure><img src="img/alura_logo.png" class="cabecera__busqueda___imagen"></figure>
+                    
+                    
+                    <input type="search" placeholder="  ¿Qué deseas buscar?" class="cabecera__busqueda___filtrado">
+            
+                </section>
+
+
+            </div>
+        </header>
+
+        <main class="cuerpo">
+            <div class="container__form">
+                <h1 class="cuerpo__titulo">Iniciar sesión</h1>
+                <form class="cuerpo__form">
+                    <input type="email" placeholder="Escriba su correo electrónico" class="form__area">
+                    <input type="password" placeholder="Escriba su contraseña" class="form__area">
+                    <input type="submit" value="Entrar" class="form__area boton__login">
+                </form>
+            </div>
+
+        </main>
+
+
+
+
+        <footer class="rodapie">
+            <div class="rodapie__contacto">
+
+                <section class="rodapie__logo">
+                    <figure><img src="img/alura_logo.png"></figure>
+                </section>
+                
+                
+                <section class="rodapie__links">
+                    <ul class="rodapie__links___lista">
+                        <li>Quienes somos</li>
+                        <li>Política de privacidad</li>
+                        <li>Programa de fidelidad</li>
+                        <li>Nuestras tiendas</li>
+                        <li>Quiero ser franquiciado</li>
+                        <li>Anuncie aquí</li>
+
+                    </ul>
+                </section>
+                
+                <form class="rodapie__form">
+                    <h2>Habla con Nosotros</h2>
+                    <input type="text" placeholder="Nombre" class="form__areas">
+                    <textarea placeholder="Mensaje" class="form__areas"></textarea>
+                    <input type="submit" value="Enviar Mensaje" class="form__areas areas__submit">
+                </form>
+
+            </div>
+
+            <div class="rodapie__copyright">
+                Copyright &copy; Costa Lucas 2022
+            </div>
+
+        </footer>
+
+
+    </body>
+
+</html>
+
+<script>
+    const entrarLogin = document.querySelector(".boton__login");
+    entrarLogin.onclick = function(evento) {
+        evento.preventDefault();
+        window.open("products.html", "_self");
+
+    }
+
+</script>

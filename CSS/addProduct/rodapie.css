@@ -1,0 +1,134 @@
+.rodapie {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.rodapie__contacto {
+    height: 25vh;
+    padding: 2rem 0 1rem 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #ddd;
+}
+
+
+.rodapie__links {
+    height: 100%;
+
+}
+
+.rodapie__links___lista {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.rodapie__form {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form__areas {
+    border: none;
+    outline: none;
+    resize: none;
+
+}
+
+
+.form__areas:not(.areas__submit) {
+    width: 80%;
+    margin: 5px 0;
+}
+
+.form__areas:nth-child(3) {
+    flex-grow: 1;
+}
+
+.areas__submit {
+    height: 1.5rem;
+    
+    width: 55%;
+    padding: 0 0.5rem;
+
+    background-color: var(--blue__button___color);
+    color: white;
+    border: none;
+    font-weight: bold;
+    
+}
+
+.rodapie__copyright {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+    .rodapie__contacto {
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+        align-items: flex-start;
+
+        height: calc(90px + 3rem + 80px);
+        padding: 0 0 50px 0;
+    }
+
+
+    .rodapie__links {
+        height: calc(90px + 3rem);
+    }
+
+    .lista__item:not(.lista__item:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .rodapie__form {
+        width: 66%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .rodapie__contacto {
+        flex-wrap: nowrap;
+        height: auto;
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .rodapie__logo {
+        margin: 1rem auto;
+    }
+
+    .rodapie__links {
+        margin: auto;
+    }
+
+    .rodapie__form {
+        width: 80%;
+        margin: 5rem auto;
+        text-align: left;
+    }
+
+    .form__areas {
+        width: 100%;
+        height: 30px;
+    }
+
+    .form__areas:nth-child(3) {
+        height: 40px;
+    }
+
+    .areas__submit {
+        width: 50%;
+
+    }
+}

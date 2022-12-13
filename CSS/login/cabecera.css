@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+    --blue__button___color: #0073e6;
+    --titles__color: #666;
+}
+
+body {
+    width: 100%;
+    background-color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.cabecera {
+    width: 100%;
+}
+
+.cabecera__barra {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    align-items: center;
+    
+
+}
+
+
+.cabecera__busqueda {
+    width: 35%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.cabecera__busqueda___imagen {
+    flex-shrink: 1;
+}
+
+
+
+.cabecera__busqueda___filtrado {
+    height: 2rem;
+    margin-left: 15px;
+    flex-grow: 1;
+
+    background-color: #eee;
+    
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+
+}
+
+
+@media screen and (max-width: 992px) {
+    .cabecera__busqueda {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+    }
+
+    .cabecera__busqueda___imagen, .cabecera__busqueda___filtrado {
+        width: 100%;
+        
+    }
+}
